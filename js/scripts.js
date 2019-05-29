@@ -5,6 +5,7 @@ const firstArticle = articles[0];
 const secondParagraph = paragraphs[1];
 const whiteTextElements = document.getElementsByClassName('text-white');
 const sidebar = document.querySelector('aside');
+const header = document.getElementById('page-header');
 /*const sidebar = document.getElementById('sidebar');
 */
 
@@ -57,4 +58,7 @@ mainContent.appendChild(newArticle);
 
 
 sidebar.classList.remove('bg-info');
-sidebar.classList.add('bg-warning');
+sidebar.classList.add('bg-primary');
+
+header.classList.remove('bg-dark');
+header.classList.add('bg-warning');
